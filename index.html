@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaay</title>
+<meta name="description" content="Jaay — book a barber, order from a shop, and find what is near you.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Jaay</h1>
+  <p class="tagline">Book an appointment, order from a shop, find what is near you.</p>
+  <div class="langs">
+    <button data-lang="en" aria-pressed="true">English</button>
+    <button data-lang="he" aria-pressed="false">עברית</button>
+    <button data-lang="ar" aria-pressed="false">عربي</button>
+  </div>
+</header>
+
+<main>
+  <div data-pane="en">
+    <section>
+      <h2>What Jaay is</h2>
+      <p>Jaay puts the businesses around you in one place. Book a haircut and see
+      when the chair is actually free, order from a shop, ask for a tradesperson
+      and get answers from people who do the work. Businesses run their side from
+      the same app — their menu, their calendar, their storefront.</p>
+      <p>Jaay is being built in Israel, for the towns it is being built in, in
+      Arabic, Hebrew and English.</p>
+    </section>
+    <section>
+      <h2>Support</h2>
+      <p>Something broken, a question, a business that wants to join:
+      <a href="mailto:saeed.kanawat@gmail.com">saeed.kanawat@gmail.com</a>.
+      A real person reads it.</p>
+      <h3>Deleting your account</h3>
+      <p>In the app: <strong>Profile → Account → Delete my account</strong>. Your
+      name, email and phone number are removed, your sign-in is closed, and the
+      account cannot be used again. Records of orders and bookings that another
+      party is also part of are kept without your identity attached, because a
+      shop's own books cannot be rewritten by somebody else. You can also ask us
+      to delete the account by email from the address you signed up with.</p>
+    </section>
+    <section>
+      <h2>Privacy</h2>
+      <p class="updated">Last updated 19 September 2026</p>
+      <h3>What Jaay holds</h3>
+      <ul>
+        <li><strong>Your account</strong> — name, email address, phone number, and
+        a password stored only as a hash. Signing in with Google gives us your
+        name and email address from Google, nothing else.</li>
+        <li><strong>Where you are</strong>, when you allow it — to sort businesses
+        by distance and to deliver to the right place. Addresses you save are kept
+        until you delete them. Location is used while the app is open; Jaay does
+        not follow you in the background.</li>
+        <li><strong>What you do here</strong> — orders, bookings, reviews,
+        favourites, and messages you send to a business or to the assistant.</li>
+        <li><strong>Photos and videos you upload</strong>, and photos you attach
+        to a question.</li>
+        <li><strong>Your device's notification token</strong>, so Jaay can tell you
+        an order is ready.</li>
+      </ul>
+      <h3>Who else sees it</h3>
+      <p>Only the companies that run parts of Jaay, and only what each needs:</p>
+      <ul>
+        <li><strong>Supabase</strong> and <strong>Railway</strong> — the database,
+        file storage and servers Jaay runs on.</li>
+        <li><strong>Google Firebase</strong> — push notifications, the SMS that
+        confirms your number, and Google sign-in.</li>
+        <li><strong>Anthropic</strong> — the assistant. What you ask it, and a
+        photo you attach to the question, is sent so it can answer.</li>
+        <li><strong>OpenAI</strong> — when you speak to the assistant instead of
+        typing, the recording is sent to be turned into text, and the reply is sent
+        to be read aloud. Jaay keeps no recording: the file exists for one request
+        and is deleted.</li>
+        <li><strong>Sentry</strong> — crash diagnostics, when a build is set up to
+        send them. Names, emails and addresses are stripped before they leave.</li>
+      </ul>
+      <p>Jaay does not sell your data, does not run ads, and does not share
+      anything with advertisers or data brokers.</p>
+      <h3>What a business sees</h3>
+      <p>A business you order or book from sees your name, the phone number on the
+      order, what you ordered, when, and a delivery address if there is one. It
+      does not see your email address, your password, or anything you did with any
+      other business.</p>
+      <h3>How long</h3>
+      <p>Your account and its history stay until you delete the account. Orders and
+      bookings are kept as records of what happened between two parties. Voice
+      recordings are never stored. A hidden conversation is hidden, not deleted,
+      because a disagreement is settled by what was actually said.</p>
+      <h3>Children</h3>
+      <p>Jaay is not meant for children under 13, and accounts are not knowingly
+      created for them.</p>
+      <h3>Your rights</h3>
+      <p>Ask for a copy of what Jaay holds about you, ask for it to be corrected,
+      or ask for it to be deleted — by email, from the address on the account.</p>
+      <h3>Changes</h3>
+      <p>If this changes in a way that matters, the app will say so rather than
+      quietly updating this page.</p>
+    </section>
+  </div>
+
+  <div data-pane="he" dir="rtl" hidden>
+    <section>
+      <h2>מה זה Jaay</h2>
+      <p>Jaay מרכז את העסקים שסביבכם במקום אחד. לקבוע תור למספרה ולראות מתי
+      באמת מתפנה כיסא, להזמין מחנות, לחפש בעל מקצוע ולקבל תשובות מאנשים שעושים
+      את העבודה. גם העסקים מנהלים את הצד שלהם מאותה אפליקציה — התפריט, היומן
+      והעמוד שלהם.</p>
+    </section>
+    <section>
+      <h2>תמיכה</h2>
+      <p>משהו לא עובד, שאלה, או עסק שרוצה להצטרף:
+      <a href="mailto:saeed.kanawat@gmail.com">saeed.kanawat@gmail.com</a>.
+      אדם אמיתי קורא את זה.</p>
+      <h3>מחיקת חשבון</h3>
+      <p>באפליקציה: <strong>פרופיל ← חשבון ← מחיקת החשבון שלי</strong>. השם,
+      האימייל ומספר הטלפון נמחקים, הכניסה נסגרת ואי אפשר להשתמש בחשבון שוב.
+      הזמנות ותורים שבהם היה צד נוסף נשמרים בלי הפרטים שלכם, כי אי אפשר למחוק
+      את הספרים של עסק אחר. אפשר גם לבקש מחיקה במייל, מהכתובת שאיתה נרשמתם.</p>
+    </section>
+    <section>
+      <h2>פרטיות</h2>
+      <p class="updated">עודכן ב־19 בספטמבר 2026</p>
+      <h3>מה Jaay שומר</h3>
+      <ul>
+        <li><strong>החשבון שלכם</strong> — שם, אימייל, מספר טלפון וסיסמה שנשמרת
+        מוצפנת בלבד. כניסה עם Google מוסרת לנו שם וכתובת אימייל, ולא יותר.</li>
+        <li><strong>המיקום שלכם</strong>, כשאתם מאשרים — כדי לסדר עסקים לפי מרחק
+        ולשלוח משלוח למקום הנכון. המיקום נקרא רק כשהאפליקציה פתוחה; Jaay לא עוקב
+        אחריכם ברקע.</li>
+        <li><strong>מה שעשיתם כאן</strong> — הזמנות, תורים, ביקורות, מועדפים
+        והודעות לעסק או לעוזר.</li>
+        <li><strong>תמונות וסרטונים שהעליתם</strong>.</li>
+        <li><strong>מזהה ההתראות של המכשיר</strong>, כדי שנוכל להודיע שההזמנה
+        מוכנה.</li>
+      </ul>
+      <h3>מי עוד רואה את זה</h3>
+      <ul>
+        <li><strong>Supabase</strong> ו־<strong>Railway</strong> — מסד הנתונים,
+        אחסון הקבצים והשרתים.</li>
+        <li><strong>Google Firebase</strong> — התראות, ה־SMS שמאשר את המספר
+        וכניסה עם Google.</li>
+        <li><strong>Anthropic</strong> — העוזר. מה ששואלים אותו, ותמונה שמצורפת
+        לשאלה, נשלחים כדי שיוכל לענות.</li>
+        <li><strong>OpenAI</strong> — כששואלים בדיבור, ההקלטה נשלחת לתמלול
+        והתשובה נשלחת כדי שתוקרא בקול. Jaay לא שומר הקלטות.</li>
+        <li><strong>Sentry</strong> — דיווחי קריסה, כשגרסה מוגדרת לשלוח אותם.
+        שמות, כתובות ואימיילים מוסרים לפני השליחה.</li>
+      </ul>
+      <p>Jaay לא מוכר מידע, לא מציג פרסומות ולא משתף מידע עם מפרסמים.</p>
+      <h3>מה עסק רואה</h3>
+      <p>עסק שהזמנתם ממנו רואה את השם, מספר הטלפון שעל ההזמנה, מה הוזמן, מתי,
+      וכתובת משלוח אם יש. הוא לא רואה את האימייל, הסיסמה, או מה עשיתם אצל עסק
+      אחר.</p>
+      <h3>כמה זמן</h3>
+      <p>החשבון וההיסטוריה שלו נשמרים עד שמוחקים את החשבון. הקלטות קול לא נשמרות
+      כלל.</p>
+      <h3>ילדים</h3>
+      <p>Jaay לא מיועד לילדים מתחת לגיל 13.</p>
+      <h3>הזכויות שלכם</h3>
+      <p>אפשר לבקש עותק של המידע, תיקון שלו או מחיקה — במייל, מהכתובת שרשומה
+      בחשבון.</p>
+    </section>
+  </div>
+
+  <div data-pane="ar" dir="rtl" hidden>
+    <section>
+      <h2>شو هو Jaay</h2>
+      <p>Jaay بجمع المحلات اللي حواليك بمكان واحد. تحجز دور عند الحلاق وتشوف
+      إيمتى في كرسي فاضي فعلاً، تطلب من محل، وتدوّر على صنايعي وتاخد ردّ من ناس
+      بتشتغل بالمهنة. وأصحاب المحلات كمان بيديروا شغلهم من نفس التطبيق — المنيو،
+      الروزنامة، وصفحة المحل.</p>
+    </section>
+    <section>
+      <h2>الدعم</h2>
+      <p>إشي مش ماشي، سؤال، أو محل بدّه يشترك:
+      <a href="mailto:saeed.kanawat@gmail.com">saeed.kanawat@gmail.com</a>.
+      في حدا حقيقي بقرا الرسايل.</p>
+      <h3>حذف الحساب</h3>
+      <p>من التطبيق: <strong>الملف الشخصي ← الحساب ← احذف حسابي</strong>. بينحذف
+      اسمك وإيميلك ورقمك، وبيتسكّر الدخول وما بتقدر تستعمل الحساب مرة تانية.
+      الطلبات والمواعيد اللي كان فيها طرف تاني بتضل محفوظة بدون معلوماتك، لأنه
+      دفاتر المحل مش إلنا نمسحها. وبتقدر كمان تطلب الحذف عالإيميل، من نفس
+      العنوان اللي سجّلت فيه.</p>
+    </section>
+    <section>
+      <h2>الخصوصية</h2>
+      <p class="updated">آخر تحديث ١٩ أيلول ٢٠٢٦</p>
+      <h3>شو بنحتفظ فيه</h3>
+      <ul>
+        <li><strong>حسابك</strong> — الاسم، الإيميل، رقم التلفون، وكلمة السر
+        محفوظة مشفّرة بس. الدخول بـ Google بيعطينا الاسم والإيميل، وبس.</li>
+        <li><strong>مكانك</strong>، لما تسمح — منشان نرتّب المحلات حسب القرب
+        ونوصّل عالمكان الصح. المكان منقراه والتطبيق مفتوح بس؛ Jaay ما بتبعك
+        بالخلفية.</li>
+        <li><strong>اللي بتعمله هون</strong> — طلبات، مواعيد، تقييمات، مفضّلات،
+        ورسايل بتبعتها لمحل أو للمساعد.</li>
+        <li><strong>الصور والفيديوهات اللي بترفعها</strong>.</li>
+        <li><strong>رمز الإشعارات تبع جهازك</strong>، منشان نخبّرك إنه الطلب
+        جاهز.</li>
+      </ul>
+      <h3>مين كمان بيشوفها</h3>
+      <ul>
+        <li><strong>Supabase</strong> و<strong>Railway</strong> — قاعدة
+        المعلومات، تخزين الملفات، والسيرفرات.</li>
+        <li><strong>Google Firebase</strong> — الإشعارات، رسالة الـ SMS اللي
+        بتأكّد رقمك، والدخول بـ Google.</li>
+        <li><strong>Anthropic</strong> — المساعد. اللي بتسأله إياه، والصورة اللي
+        بترفقها مع السؤال، بتنبعتله منشان يرد عليك.</li>
+        <li><strong>OpenAI</strong> — لما تحكي بدل ما تكتب، التسجيل بينبعت
+        ليتحوّل لنص، والرد بينبعت ليتقرا بصوت. Jaay ما بتحتفظ بأي تسجيل.</li>
+        <li><strong>Sentry</strong> — تقارير الأعطال، لما تكون النسخة مضبوطة
+        تبعتها. الأسماء والإيميلات والعناوين بتنشال قبل ما تطلع.</li>
+      </ul>
+      <p>Jaay ما بتبيع معلوماتك، ما في إعلانات، وما منشارك إشي مع شركات إعلانات.</p>
+      <h3>شو بشوف المحل</h3>
+      <p>المحل اللي بتطلب منه بشوف اسمك، الرقم اللي عالطلب، شو طلبت وإيمتى،
+      وعنوان التوصيل إذا في. ما بشوف إيميلك ولا كلمة السر ولا شو عملت عند محل
+      تاني.</p>
+      <h3>قدّيش بتضل محفوظة</h3>
+      <p>حسابك وتاريخه بيضلوا لحد ما تحذف الحساب. التسجيلات الصوتية ما بتنحفظ
+      أبداً.</p>
+      <h3>الأطفال</h3>
+      <p>Jaay مش مخصص لأطفال تحت ١٣ سنة.</p>
+      <h3>حقوقك</h3>
+      <p>بتقدر تطلب نسخة من معلوماتك، أو تصحيحها، أو حذفها — عالإيميل، من العنوان
+      المسجّل بالحساب.</p>
+    </section>
+  </div>
+</main>
+
+<footer>Jaay · <a href="mailto:saeed.kanawat@gmail.com">saeed.kanawat@gmail.com</a></footer>
+
+<script>
+  const buttons = document.querySelectorAll('.langs button');
+  const panes = document.querySelectorAll('[data-pane]');
+  function show(lang) {
+    panes.forEach(p => { p.hidden = p.dataset.pane !== lang; });
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
+  }
+  buttons.forEach(b => b.addEventListener('click', () => show(b.dataset.lang)));
+  const guess = (navigator.language || 'en').slice(0, 2);
+  if (guess === 'he' || guess === 'ar') show(guess);
+</script>
+</body>
+</html>
